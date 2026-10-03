@@ -1,0 +1,20 @@
+[project]
+name = "agentic-assistant"
+version = "0.1.0"
+description = "Multi-agent AI assistant tool."
+readme = "README.md"
+authors = [
+    { name = "Noah Hammoud", email = "noah.hammoud01@gmail.com" },
+    { name = "Abdulla Yousif", email = "abbodiyousif0804@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "agno>=3.1.1",
+]
+
+[project.scripts]
+agentic-assistant = "agentic_assistant:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
