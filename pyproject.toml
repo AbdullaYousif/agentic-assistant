@@ -10,10 +10,12 @@ authors = [
 requires-python = ">=3.14"
 dependencies = [
     "agno>=3.1.1",
+    "openai>=3.24.0",
+    "python-dotenv>=1.2.4",
 ]
 
 [project.scripts]
-agentic-assistant = "agentic_assistant:main"
+agentic-assistant = "agentic_assistant.main:run"
 
 [build-system]
 requires = ["uv_build>=0.12.5,<0.13.0"]
